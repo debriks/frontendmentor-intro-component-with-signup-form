@@ -15,7 +15,7 @@
 }
 
 html {
-  -webkit-text-size-adjust: 90%;
+  font-size: 100%;
   box-sizing: border-box;
 }
 
@@ -29,7 +29,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  -webkit-text-size-adjust: 90%;
   font-weight: 400;
   line-height: 1.3;
 }
