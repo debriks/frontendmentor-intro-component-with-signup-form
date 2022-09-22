@@ -63,13 +63,13 @@ select:focus {
 .learn h1 {
   font-size: 70px;
   line-height: 1.1;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 .learn p {
   font-size: 22px;
   line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 .try {
