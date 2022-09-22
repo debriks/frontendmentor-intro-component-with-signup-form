@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+section {
+  max-width: 100%;
+  width: 50%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(/images/bg-intro-desktop.png) no-repeat;
+  background-size: cover;
+  background-color: var(--red);
+  padding: 0px 160px;
+}
+
+.learn {
+  color: white;
+  padding-right: 40px;
+}
+
+.learn h1 {
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.learn p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.try {
+  width: 45%;
+}
+
+.head {
+  background-color: var(--blue);
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 1px hsla(249, 10%, 26%, 0.3);
+}
+
+.head span {
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  padding: 25px 35px;
+  margin-bottom: 18px;
+  border: 2px solid hsla(246, 25%, 77%, 0.5);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input:focus {
+  border: 2px solid hsla(246, 25%, 77%, 1);
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 4px solid hsl(154, 60%, 45%);
+}
+
+.terms {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grayishBlue);
+}
+
+.terms span {
+  color: var(--red);
+}
+
+@media (max-width: 976px) {
+  section {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 30px;
+  }
+
+  .learn {
+    text-align: center;
+    padding: 100px 0 0 0;
+  }
+
+  .learn h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+
+  .learn p {
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 20px 60px 40px;
+  }
+
+  .try {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 18px;
+    padding: 28px 50px;
+  }
+
+  #form {
+    padding: 24px;
+  }
+
+  input,
+  button {
+    padding: 20px 25px;
+  }
+
+  .terms {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    background: url(/images/bg-intro-mobile.png) no-repeat;
+    background-size: cover;
+    background-color: var(--red);
+    padding-bottom: 100px;
+  }
+  .learn h1 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .learn p {
+    font-size: 18px;
+    padding: 20px 10px 40px;
+  }
+}
