@@ -141,6 +141,10 @@ form {
   color: var(--red);
 }
 
+.form-control.error input::placeholder {
+  color: var(--red);
+}
+
 .form-control.error img {
   opacity: 1;
 }
