@@ -108,6 +108,33 @@ form {
   box-shadow: 0px 8px 1px hsla(249, 10%, 26%, 0.2);
 }
 
+input,
+button {
+  padding: 20px 25px;
+  border: 1px solid hsla(246, 25%, 77%, 0.5);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  border: 2px solid hsla(246, 25%, 77%, 1);
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  font-size: 15px;
+  padding: 22px 0px 20px;
+  text-transform: uppercase;
+  border-bottom: 4px solid hsl(154, 60%, 45%);
+  margin-bottom: 16px;
+}
+
 .form-control {
   display: flex;
   flex-direction: column;
@@ -147,33 +174,6 @@ form {
 
 .form-control.error img {
   opacity: 1;
-}
-
-input,
-button {
-  padding: 20px 25px;
-  border: 1px solid hsla(246, 25%, 77%, 0.5);
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-input:focus {
-  border: 2px solid hsla(246, 25%, 77%, 1);
-}
-
-button {
-  background-color: var(--green);
-  color: white;
-  font-size: 15px;
-  padding: 22px 0px 20px;
-  text-transform: uppercase;
-  border-bottom: 4px solid hsl(154, 60%, 45%);
-  margin-bottom: 16px;
 }
 
 .terms {
