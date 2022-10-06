@@ -111,16 +111,51 @@ form {
 .form-control {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.form-control small {
+  color: var(--red);
+  text-align: end;
+  font-size: 11px;
+  font-style: italic;
+  margin: 5px 0px 16px;
+  opacity: 0;
+}
+
+.form-control img {
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-125%);
+  right: 15px;
+  opacity: 0;
+}
+
+.form-control.error small {
+  opacity: 1;
+}
+
+.form-control.error input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form-control.error img {
+  opacity: 1;
 }
 
 input,
 button {
   padding: 20px 25px;
-  margin-bottom: 16px;
   border: 1px solid hsla(246, 25%, 77%, 0.5);
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 input:focus {
@@ -134,6 +169,7 @@ button {
   padding: 22px 0px 20px;
   text-transform: uppercase;
   border-bottom: 4px solid hsl(154, 60%, 45%);
+  margin-bottom: 16px;
 }
 
 .terms {
@@ -234,13 +270,6 @@ button {
   .learn p {
     font-size: 18px;
     line-height: 28px;
-  }
-
-  .head p {
-    font-size: 15px;
-    line-height: 26px;
-    text-align: center;
-    color: white;
   }
 
   .try {
